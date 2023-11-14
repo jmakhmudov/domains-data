@@ -42,7 +42,7 @@ export const counterSlice = createSlice({
     name: 'domain',
     initialState,
     reducers: {
-        setDomainInfo: (state, action: PayloadAction<DomainInfo>) => {
+        setDomainInfo: (_state, action: PayloadAction<DomainInfo>) => {
             return action.payload;
         },
     },
