@@ -1,3 +1,6 @@
+$bckg-color: #E5E7EA;
+$high-color: #FD3743;
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +11,7 @@
 body {
   min-width: 100vw;
   min-height: 100vh;
+  background-color: $bckg-color;
 }
 
 main {
@@ -22,7 +26,7 @@ nav {
   padding: 10px;
   font-weight: 600;
   font-size: 20px;
-  color: #FD3743;
+  color: $high-color;
 }
 
 .search-box {
@@ -37,7 +41,8 @@ nav {
     font-size: 40px;
     font-weight: 700;
     text-align: center;
-    color: #FD3743;
+    color: $high-color;
+    background-color: $bckg-color;
 
     &:focus {
       caret-color: black;
