@@ -9,14 +9,13 @@ $high-color: #FD3743;
 }
 
 body {
-  min-width: 100vw;
-  min-height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   background-color: $bckg-color;
 }
 
 main {
-  width: 100vw;
-  height: 90vh;
+  height: 90dvh;
   display: grid;
   place-items: center;
 }
@@ -32,7 +31,7 @@ nav {
 .search-box {
   text-align: center;
   gap: 10px;
-  font-size: 40px;
+  font-size: 48px;
   font-weight: 800;
 
   input {
@@ -43,6 +42,7 @@ nav {
     text-align: center;
     color: $high-color;
     background-color: $bckg-color;
+    width: 90vw;
 
     &:focus {
       caret-color: black;

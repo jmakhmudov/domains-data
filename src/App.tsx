@@ -27,6 +27,7 @@ function App() {
             defaultValue={domain}
             onChange={(e) => setDomain(e.target.value)} 
             onKeyDown={handleEnterPress}
+            placeholder="Enter domain..."
             autoFocus
           />
         </section>
