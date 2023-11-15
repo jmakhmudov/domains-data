@@ -14,6 +14,14 @@ body {
   background-color: $bckg-color;
 }
 
+a {
+  text-decoration: none;
+
+  &:visited {
+    color: $high-color;
+  }
+}
+
 main {
   height: 90dvh;
   display: grid;
@@ -48,4 +56,27 @@ nav {
       caret-color: black;
     }
   }
+}
+
+.enter-key {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(149, 149, 149);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 20px;
+    margin-left: 5px;
+  }
+}
+
+.active {
+  opacity: 1;
+}
+
+.inactive {
+  opacity: 0.4;
 }
