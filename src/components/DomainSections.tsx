@@ -42,7 +42,7 @@ const DomainSections = ({ domainInfo }: SectionProps) => {
                 <DomainInfoSection title="IP information">
                     <ul>
                         {
-                            Object.keys(domainInfo.ipinfo).map((ip, index) => (
+                            Object.keys(domainInfo.ipinfo).map((ip) => (
                                 <li><strong>{ip}</strong>
                                     <ul>
                                         <li><strong>City:</strong> {domainInfo.ipinfo[ip].city}</li>
