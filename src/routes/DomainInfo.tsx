@@ -5,6 +5,8 @@ import { useSelector, useDispatch } from 'react-redux'
 import { setDomainInfo } from "../features/domain/domainSlice";
 import { RootState } from "../store";
 import Header from "../components/Header";
+import DomainInfoSection from "../templates/DomainInfoSection";
+import DomainSections from "../components/DomainSections";
 
 const DomainInfo = () => {
     const location = useLocation();
@@ -25,7 +27,16 @@ const DomainInfo = () => {
     return (
         <>
             <Header />
-            {domainInfo.domain}
+            {
+                domainInfo.web.domain ?
+                    <DomainSections domainInfo={domainInfo} /> :
+                    <section className="domain-nf">
+                        <div>
+                            <span>{query}</span> is invalid domain!
+                        </div>
+                    </section>
+            }
+
         </>
     );
 }

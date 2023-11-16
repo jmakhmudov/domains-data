@@ -2,8 +2,6 @@ $bckg-color: #E5E7EA;
 $high-color: #FD3743;
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
@@ -22,10 +20,25 @@ a {
   }
 }
 
-main {
+main,
+.domain-nf {
   height: 90dvh;
   display: grid;
   place-items: center;
+}
+
+span {
+  color: $high-color;
+}
+
+.domain-nf div {
+  font-size: 40px;
+  color: $high-color;
+  font-weight: 700;
+
+  span {
+    color: black;
+  }
 }
 
 nav {
@@ -79,4 +92,20 @@ nav {
 
 .inactive {
   opacity: 0.4;
+}
+
+.domain-info {
+  h1 {
+    text-align: center;
+  }
+
+  .domain-info-section {
+    display: grid;
+    place-items: start center;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.domain-section {
+  width: 35vw;
 }
