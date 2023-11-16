@@ -5,7 +5,6 @@ import { useSelector, useDispatch } from 'react-redux'
 import { setDomainInfo } from "../features/domain/domainSlice";
 import { RootState } from "../store";
 import Header from "../components/Header";
-import DomainInfoSection from "../templates/DomainInfoSection";
 import DomainSections from "../components/DomainSections";
 
 const DomainInfo = () => {
