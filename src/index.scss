@@ -4,12 +4,14 @@ $high-color: #FD3743;
 * {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
 body {
-  width: 100dvw;
-  height: 100dvh;
+  min-width: 100vw;
+  min-height: 100vh;
   background-color: $bckg-color;
+  padding-bottom: 50px;
 }
 
 a {
@@ -22,7 +24,7 @@ a {
 
 main,
 .domain-nf {
-  height: 90dvh;
+  height: 90vh;
   display: grid;
   place-items: center;
 }
@@ -103,9 +105,18 @@ nav {
     display: grid;
     place-items: start center;
     grid-template-columns: 1fr 1fr;
+
+    @media screen and (max-width: 360px) {
+      grid-template-columns: 1fr;
+    }
+    
   }
 }
 
 .domain-section {
   width: 35vw;
+
+  @media screen and (max-width: 360px) {
+    width: 90vw;
+  }
 }
